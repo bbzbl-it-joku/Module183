@@ -5,17 +5,35 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #4f46e5;
+  /* Indigo-600 */
+  --secondary: #6366f1;
+  /* Indigo-500 */
+  --accent: #818cf8;
+  /* Purple-500 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root[class~="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #6366f1;
+  /* Indigo-500 - slightly lighter for dark mode */
+  --secondary: #6366f1;
+  /* Indigo-500 */
+  --accent: #818cf8;
+  /* Purple-500 */
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
 }
